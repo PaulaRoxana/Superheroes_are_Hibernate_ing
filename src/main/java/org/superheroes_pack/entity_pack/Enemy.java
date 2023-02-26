@@ -18,10 +18,17 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Enemy extends CommonAttributes {
+
     @Column(name = "real_name", nullable = false, unique = true, length = 45)
     private String realName;
 
     @ToString.Exclude
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "enemy")
     private Superhero superhero;
+
+
+    public Enemy(String name, String realName) {
+        this.name = name;
+        this.realName = realName;
+    }
 }

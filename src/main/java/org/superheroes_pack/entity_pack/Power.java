@@ -24,5 +24,18 @@ public class Power extends CommonAttributes {
 
     @ToString.Exclude
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "powers") //MappedBy inseamna ca e non-owning side
-    private Set<Superhero> books = new HashSet<>();
+    private Set<Superhero> superheroes = new HashSet<>();
+
+    public Power(String name, Boolean fatality) {
+        this.name = name;
+        this.fatality = fatality;
+    }
+
+    public void addSuperheroToPower(Superhero superhero) {
+        superheroes.add(superhero);
+    }
+
+    public void removeSuperheroFromPower(Superhero superhero) {
+        superheroes.remove(superhero);
+    }
 }

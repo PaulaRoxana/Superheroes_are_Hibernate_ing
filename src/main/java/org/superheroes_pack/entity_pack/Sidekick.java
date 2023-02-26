@@ -25,4 +25,8 @@ public class Sidekick extends CommonAttributes {
     @JoinColumn(name = "superhero_id")
     private Superhero superhero;
 
+    public Sidekick(String name, String mainTask) {
+        this.name = name;
+        this.mainTask = mainTask;
+    }
 }
