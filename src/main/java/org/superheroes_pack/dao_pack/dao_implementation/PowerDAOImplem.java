@@ -16,7 +16,7 @@ public class PowerDAOImplem implements PowerDAO {
     private final SessionFactory sessionFactory;
     private Session session;
     private Transaction transaction;
-    private final PowerDAO powerDAO = new PowerDAOImplem();
+
 
     public PowerDAOImplem() {
         this.sessionFactory = HibernateUtil.getSessionFactory();

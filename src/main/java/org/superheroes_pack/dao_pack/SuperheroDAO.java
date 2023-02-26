@@ -18,6 +18,8 @@ public interface SuperheroDAO {
 
     void updateSuperhero(Superhero SuperheroFromFrontend);
 
+    void updateSuperheroById(String heroName, Integer id);
+
     Superhero getSuperheroByIdWithCriteriaBuilder(Integer id);
 
     Superhero getSuperheroByIdWithHQL(Integer id);

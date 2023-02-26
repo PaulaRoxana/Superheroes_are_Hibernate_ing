@@ -4,8 +4,6 @@ import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
@@ -27,7 +25,7 @@ public class Superhero extends CommonAttributes {
 
     @Column(name = "hero_name", nullable = false, unique = true, length = 45)
     private String heroName;
-    @ToString.Exclude
+
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Enemy enemy;
 

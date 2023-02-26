@@ -17,7 +17,6 @@ public class EnemyDAOImplem implements EnemyDAO {
     private Session session;
     private Transaction transaction;
 
-    private final EnemyDAO enemyDAO = new EnemyDAOImplem();
     public EnemyDAOImplem() {
         sessionFactory = HibernateUtil.getSessionFactory();
     }

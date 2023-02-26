@@ -7,7 +7,7 @@
 
     <session-factory>
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="connection.url">jdbc:mysql://localhost:3306/Superheroes_are_Hibernate_ing?createDatabaseIfNotExist=true&amp;autoReconnect=true&amp;useSSL=false</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/SuperheroesAreHibernateIng?createDatabaseIfNotExist=true&amp;autoReconnect=true&amp;useSSL=false</property>
         <property name="connection.username">root</property>
         <property name="connection.pool_size">10</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
@@ -27,7 +27,6 @@
         <mapping class="org.superheroes_pack.entity_pack.Enemy"/>
         <mapping class="org.superheroes_pack.entity_pack.Power"/>
         <mapping class="org.superheroes_pack.entity_pack.Sidekick"/>
-<!--        <mapping class="org.superheroes_pack.entity_pack.entity.CommonAttributes"/>-->
 
     </session-factory>
 
