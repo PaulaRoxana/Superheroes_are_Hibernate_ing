@@ -1,7 +1,10 @@
 package org.superheroes_pack.entity_pack;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,6 +27,11 @@ public class Power extends CommonAttributes {
 
     @ToString.Exclude
     @ManyToMany(fetch = FetchType.EAGER, mappedBy = "powers") //MappedBy inseamna ca e non-owning side
+//    @JoinTable(
+//            name="superhero_power",
+//            joinColumns=@JoinColumn(name="power_id"),
+//            inverseJoinColumns=@JoinColumn(name="superhero_id")
+//    )
     private Set<Superhero> superheroes = new HashSet<>();
 
     public Power(String name, Boolean fatality) {

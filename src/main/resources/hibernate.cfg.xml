@@ -23,10 +23,11 @@
 
 
 
-        <mapping class="entity_pack.entity.Superhero"/>
-        <mapping class="entity_pack.entity.Enemy"/>
-        <mapping class="entity_pack.entity.Power"/>
-        <mapping class="entity_pack.entity.Sidekick"/>
+        <mapping class="org.superheroes_pack.entity_pack.Superhero"/>
+        <mapping class="org.superheroes_pack.entity_pack.Enemy"/>
+        <mapping class="org.superheroes_pack.entity_pack.Power"/>
+        <mapping class="org.superheroes_pack.entity_pack.Sidekick"/>
+<!--        <mapping class="org.superheroes_pack.entity_pack.entity.CommonAttributes"/>-->
 
     </session-factory>
 

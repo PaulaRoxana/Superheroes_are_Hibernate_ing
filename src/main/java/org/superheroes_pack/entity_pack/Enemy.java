@@ -23,7 +23,7 @@ public class Enemy extends CommonAttributes {
     private String realName;
 
     @ToString.Exclude
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "enemy")
+    @OneToOne(mappedBy = "enemy")
     private Superhero superhero;
 
 
