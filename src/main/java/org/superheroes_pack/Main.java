@@ -22,13 +22,13 @@ public class Main {
         PowerDAO powerDAO = new PowerDAOImplem();
 
 /**CREATE*/
-    //    superheroDAO.insertMultipleSuperheroes(getRandomSuperheroes());
+        superheroDAO.insertMultipleSuperheroes(getRandomSuperheroes());
         //     superheroDAO.insertSuperhero(getRandomSuperhero());
 
         /**READ*/
 
     //    superheroDAO.getAllSuperheroes().forEach(System.out::println);
-        //   System.out.println(superheroDAO.getSuperheroById(4));
+      //     System.out.println(superheroDAO.getSuperheroById(7));
 
 /**UPDATE*/
         // superheroDAO.updateSuperhero(getRandomSuperhero());
@@ -36,7 +36,7 @@ public class Main {
 
 /**DELETE*/
 
-        superheroDAO.deleteSuperheroById(7);
+        superheroDAO.deleteSuperheroById(13);
 
     }
 
